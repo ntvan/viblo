@@ -2,7 +2,6 @@ import time
 import csv
 from selenium import webdriver
 
-
 def validate_with_username_and_not_password(browser):
     """
     Function validate form login khi có username nhưng không có password
@@ -37,7 +36,6 @@ def validate_with_username_and_not_password(browser):
 
     except Exception as e:
         print(e)
-
 
 def validate_with_password_and_not_username(browser):
     """
@@ -75,7 +73,6 @@ def validate_with_password_and_not_username(browser):
     except Exception as e:
         print(e)
 
-
 def validate_with_username_incorrect_and_password_correct(browser):
     """
     Function validate form login khi có username sai nhưng password đúng
@@ -105,8 +102,6 @@ def validate_with_username_incorrect_and_password_correct(browser):
             return False
     except:
         pass
-
-
 
 def validate_with_username_correct_and_password_incorrect(browser):
     """
@@ -147,7 +142,6 @@ def validate_with_username_correct_and_password_incorrect(browser):
     except Exception as e:
         print(e)
 
-
 def validate_with_username_html_and_password_correct(browser):
     """
     Function validate form login khi có username đúng nhưng password sai
@@ -185,7 +179,6 @@ def validate_with_username_html_and_password_correct(browser):
 
     except Exception as e:
         print(e)
-
 
 def validate_with_username_overlong_and_password_correct(browser):
     """
@@ -226,7 +219,6 @@ def validate_with_username_overlong_and_password_correct(browser):
     except Exception as e:
         print(e)
 
-
 def validate_with_username_correct_and_password_less(browser):
     """
     Function validate form login khi có username đúng nhưng password sai
@@ -264,7 +256,6 @@ def validate_with_username_correct_and_password_less(browser):
 
     except Exception as e:
         print(e)
-
 
 def validate_with_username_less_and_password_correct(browser):
     """
@@ -304,7 +295,6 @@ def validate_with_username_less_and_password_correct(browser):
     except Exception as e:
         print(e)
 
-
 def validate_with_username_correct_and_password_correct(browser):
     """
     Function validate form login khi có username đúng nhưng password đúng
@@ -342,7 +332,6 @@ def validate_with_username_correct_and_password_correct(browser):
 
     except Exception as e:
         print(e)
-
 
 def click_button(browser):
     browser.refresh()
